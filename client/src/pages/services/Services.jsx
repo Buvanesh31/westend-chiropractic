@@ -49,6 +49,22 @@ const service = [
       "ACL injury, Fractures, Meniscus Tear, Knee Bursitis, Patellar Tendinitis, Osteoarthritis, Osteochondritis Dessicans",
     image: "8.jpg",
   },
+  {
+    title: "Chiropractic Adjsutment",
+    description:
+      "Chiropractic neck adjustments involve targeted, manual manipulation of the cervical spine to enhance mobility and alleviate neck pain. This non-invasive technique aims to improve joint function, reduce inflammation, and provide relief from discomfort.",
+    image: "20.jpeg",
+  },
+];
+
+const service2 = [
+ 
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "9.jpeg",
+  },
 ];
 
 export const Services = () => {
@@ -79,6 +95,13 @@ export const Services = () => {
       </section>
       <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
         <div className="flex flex-wrap -m-4">
+          {service2.map((e, index) => {
+            return <ServiceImage key={index} image={e.image} />;
+          })}
+        </div>
+      </div>
+      <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
+        <div className="flex flex-wrap -m-4">
          {service.map((e,index)=>{
           return(
             <ServiceCard key={index} image={e.image} title={e.title} description={e.description} />
@@ -86,7 +109,20 @@ export const Services = () => {
          })}
         </div>
       </div>
+     
     </>
+  );
+};
+
+const ServiceImage = (props) => {
+  return (
+    <div className="p-4 md:w-full flex items-center justify-center">
+      <img
+  className="lg:h-64 md:h-52 w-full md:w-2/3 lg:w-1/3 object-cover object-center border border-gray-300 rounded-md"
+  src={"/images/services/" + props.image}
+  alt="blog"
+/>
+    </div>
   );
 };
 
@@ -127,3 +163,5 @@ const ServiceCard = (props) => {
   </div>
   );
 };
+
+

@@ -16,7 +16,32 @@ const Doctors = [
       imageSrc: "images/doctors/rupert-long-headshot.jpg"
   },
 ];
-
+const service2 = [
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "12.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "13.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "16.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "18.jpeg",
+  },
+];
 export const About = () => {
   return (
     <> 
@@ -33,6 +58,7 @@ export const About = () => {
           wellness.
         </p>
       </div>
+      
       {Doctors.map((e, index) => {
         return (
           <AboutCard
@@ -44,10 +70,31 @@ export const About = () => {
           />
         );
       })}
+      <div className= "font-serif flex flex-col pt-24  text-center w-full mb-12">
+      <h1 className="mb-4 text-3xl text-gray-300 font-bold text-dark sm:text-4xl md:text-[40px]">
+          Clinic Facilities
+        </h1></div>
+      <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
+        <div className="flex flex-wrap -m-4">
+          {service2.map((e, index) => {
+            return <ServiceImage key={index} image={e.image} />;
+          })}
+        </div>
+      </div>
     </> 
   );
 };
-
+const ServiceImage = (props) => {
+  return (
+    <div className="p-4 md:w-full flex items-center justify-center">
+      <img
+  className="lg:h-64 md:h-52 w-full md:w-2/3 lg:w-1/3 object-cover object-center border border-gray-300 rounded-md"
+  src={"/images/services/" + props.image}
+  alt="blog"
+/>
+    </div>
+  );
+};
 function AboutCard(props) {
   return (
     <>
