@@ -51,9 +51,7 @@ export const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="text-gray-600 font-serif">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
   <div className="lg:max-w-2xl lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
     <div className=" aspect-w-4 aspect-h-3">
       <img
@@ -170,6 +168,36 @@ export const HomePage = () => {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <br></br>
+            <div className=" flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4 relative overflow-hidden h-96 mb-4">
+              <img
+                alt="gallery"
+                className="w-full object-cover h-109 object-center block opacity-90 absolute inset-0 rounded"
+                src={"/images/services/19.jpeg"}
+              />
+              <div className="text-center relative z-10 w-full">
+                <h2 className="text-3xl text-white font-light mb-2">
+                    Path to wellness
+                </h2>
+               
+                <a
+                 onClick={()=>{
+                  window.location = "/services"
+                 }}
+                  className="cursor-pointer mt-3 text-blue-500 inline-flex items-center font-bold"
+                >
+                  Our Services
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
