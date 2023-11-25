@@ -1,4 +1,29 @@
-
+const service2 = [
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "10.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "15.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "14.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "11.jpeg",
+  },
+];
 
 const testimonials = [
   {
@@ -55,8 +80,18 @@ export const Testimonial = () => {
   return (
     <>
       <section className="text-gray-500 font-serif">
+      
   <div className="container px-5 py-24 mx-auto">
-    <h1 className="text-3xl font-bold title-font text-gray-400 mb-12 text-center text-dark">Testimonials from our clients.</h1>
+    <h1 className="text-3xl font-bold title-font text-gray-400 mb-12 text-center text-dark">Testimonials</h1>
+    <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
+        <div className="flex flex-wrap -m-4">
+          {service2.map((e, index) => {
+            return <ServiceImage key={index} image={e.image} />;
+          })}
+        </div>
+      </div>
+      
+    <h1 className="text-3xl font-bold title-font text-gray-400 mb-12 text-center text-dark">From our clients</h1>
     <div className="flex flex-wrap -m-4">
     {
       testimonials.map((e,i)=>{
@@ -72,7 +107,17 @@ export const Testimonial = () => {
     </>
   );
 };
-
+const ServiceImage = (props) => {
+  return (
+    <div className="p-4 md:w-full flex items-center justify-center">
+      <img
+  className="lg:h-64 md:h-52 w-full md:w-2/3 lg:w-1/3 object-cover object-center border border-gray-300 rounded-md"
+  src={"/images/services/" + props.image}
+  alt="blog"
+/>
+    </div>
+  );
+};
 
 
 function TestimonialCard(props) {
