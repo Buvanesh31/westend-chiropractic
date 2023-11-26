@@ -74,6 +74,19 @@ export const HomePage = () => {
     </p>
   </div>
 </div>
+<div className="mb-12 mx-auto max-w-screen-md overflow-hidden">
+  <iframe
+    title="West End Chiropractic Video"
+    src="https://www.youtube.com/embed/p5ec0OMbhWU"
+    height="200" // Set your desired height here
+    style={{ border: "none", overflow: "hidden", maxWidth: "100%" }}
+    scrolling="no"
+    frameBorder="0"
+    allowFullScreen="true"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    className="w-full object-cover object-center"
+  />
+</div>
 </section>
       <section className="text-gray-600 font-serif">
         <div className="container px-5 pb-20 mx-auto flex flex-wrap">
