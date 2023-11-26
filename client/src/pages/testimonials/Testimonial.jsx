@@ -75,7 +75,7 @@ const testimonials = [
     name: "C. Richardson",
   },
 ];
-
+<iframe width="571" height="322" src="https://www.youtube.com/embed/p5ec0OMbhWU" title="West End Chiropractic (The 5 Keys)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 export const Testimonial = () => {
   return (
     <>
@@ -83,6 +83,18 @@ export const Testimonial = () => {
       
   <div className="container px-5 py-24 mx-auto">
     <h1 className="text-3xl font-bold title-font text-gray-400 mb-12 text-center text-dark">Testimonials</h1>
+    <div className="mb-12 mx-auto" style={{ maxWidth: "560px" }}>
+            <iframe
+              title="West End Chiropractic Video"
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWestEndChiropracticRehabilitationCenter%2Fvideos%2F1323297481033951%2F&show_text=false&width=560&t=0"
+              width="560"
+              height="314"
+              style={{ border: "none", overflow: "hidden" }}
+              scrolling="no"
+              frameBorder="0"
+              allowFullScreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            /></div>
     <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {service2.map((e, index) => {
