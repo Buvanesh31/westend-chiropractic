@@ -83,18 +83,20 @@ export const Testimonial = () => {
       
   <div className="container px-5 py-24 mx-auto">
     <h1 className="text-3xl font-bold title-font text-gray-400 mb-12 text-center text-dark">Testimonials</h1>
-    <div className="mb-12 mx-auto" style={{ maxWidth: "560px" }}>
-            <iframe
-              title="West End Chiropractic Video"
-              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWestEndChiropracticRehabilitationCenter%2Fvideos%2F1323297481033951%2F&show_text=false&width=560&t=0"
-              width="560"
-              height="314"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allowFullScreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            /></div>
+    <div className="mb-12 mx-auto max-w-screen-md sm:aspect-w-16 sm:aspect-h-9 max-h-screen overflow-hidden">
+  <iframe
+    title="West End Chiropractic Video"
+    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWestEndChiropracticRehabilitationCenter%2Fvideos%2F1323297481033951%2F&show_text=false&width=560&t=0"
+    width="100%"
+    height="100%"
+    style={{ border: "none", overflow: "hidden", maxWidth: "100%" }}
+    scrolling="no"
+    frameBorder="0"
+    allowFullScreen="true"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    className="w-full h-full object-cover object-center sm:h-[900px] md:h-[500px] lg:h-[500px]"
+  />
+</div>
     <div className="text-gray-600 font-serif container px-5 pb-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {service2.map((e, index) => {
