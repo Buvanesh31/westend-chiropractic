@@ -11,7 +11,7 @@ const service = [
     title: "Physical Therapy & Rehabilitation",
     description:
       "We provide therapy to develop, maintain and restore maximum movement and functional ability throughout your life.",
-    image: "2.jpg",
+    image: "4.jpg",
   },
   {
     title: "Sports Rehabilitation",
