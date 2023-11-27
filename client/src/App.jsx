@@ -10,7 +10,7 @@ import { Contact } from "./pages/contact/Contact";
 
 function App() {
   const appStyle = {
-    backgroundColor: 'rgb(33, 31, 30 )',
+    backgroundColor: 'rgb(23, 22, 21 )',
     // Add more styles as needed
   };
 
