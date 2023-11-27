@@ -41,6 +41,30 @@ const service2 = [
       "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
     image: "18.jpeg",
   },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "21.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "22.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "23.jpeg",
+  },
+  {
+    title: "Non-surgical Spinal Decompression Therapy",
+    description:
+      "West End Chiropractic is proud to announce that our clinic is now equipped with the newest option in back pain and knee arthritis relief.",
+    image: "24.jpeg",
+  },
 ];
 export const About = () => {
   return (

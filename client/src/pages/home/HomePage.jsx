@@ -105,22 +105,7 @@ export const HomePage = () => {
                   Using advanced techniques, we aim to restore your body's
                   natural balance.
                 </p>
-                <a
-                 onClick={()=>{
-                  window.location = "/services"
-                 }}
-                  className="cursor-pointer mt-3 text-blue-500 inline-flex items-center font-bold"
-                >
-                  Our Services
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+                
               </div>
             </div>
             <div className="flex flex-wrap -mx-2">
@@ -138,22 +123,7 @@ export const HomePage = () => {
                     <p className="text-white leading-relaxed">
                       Call Today, we would love to chat about our services.
                     </p>
-                    <a
-                      onClick={() => {
-                        window.location = "/testimonials";
-                      }}
-                      className="mt-3 cursor-pointer text-blue-500 font-bold inline-flex items-center"
-                    >
-                      Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -171,17 +141,7 @@ export const HomePage = () => {
                     <p className="text-white leading-relaxed">
                     Your path to well-being begins with a simple contact.
                     </p>
-                    <a className="ml-10 cursor-pointer mt-3 font-bold text-blue-500 inline-flex items-center">
-                    Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
+                   
                   </div>
                 </div>
               </div>
@@ -198,22 +158,11 @@ export const HomePage = () => {
                     Path to wellness
                 </h2>
                
-                <a
-                 onClick={()=>{
-                  window.location = "/services"
-                 }}
-                  className="cursor-pointer mt-3 text-blue-500 inline-flex items-center font-bold"
-                >
-                  Our Services
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+                
+                <div  className="cursor-pointer mt-3 text-blue-500 inline-flex items-center font-bold"> Our Services</div>
+                
+                 
+                  
               </div>
             </div>
           </div>
