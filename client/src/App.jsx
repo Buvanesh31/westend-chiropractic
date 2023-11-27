@@ -7,6 +7,7 @@ import { Testimonial } from "./pages/testimonials/Testimonial";
 import { Services } from "./pages/services/Services";
 import { NotFound } from "./pages/404/NotFound";
 import { Contact } from "./pages/contact/Contact";
+import { Forms } from "./pages/forms/Forms";
 
 function App() {
   const appStyle = {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/testimonials" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/forms" element={<Forms />} />
         </Routes>
         <Footer />
         </div>

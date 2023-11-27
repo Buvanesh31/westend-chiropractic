@@ -22,6 +22,10 @@ const navItems = [
     name: "Contact",
     to: "/contact",
   },
+  {
+    name: "Patient Forms",
+    to: "/forms",
+  },
 ];
 
 export const Header = () => {
