@@ -14,9 +14,9 @@ const service = [
     image: "4.jpg",
   },
   {
-    title: "Sports Rehabilitation",
+    title: "Shock wave and Sports Rehabilitation",
     description:
-      "All athletes deserve the very best sports-related care and treatment that is focused, one-on-one and state-of-the art.",
+      "Shock wave therapy promotes tissue healing and pain relief, all athletes deserve the very best sports-related care and treatment that is focused, one-on-one and state-of-the art.",
     image: "3.jpg",
   },
   {
