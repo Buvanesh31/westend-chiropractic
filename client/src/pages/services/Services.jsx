@@ -47,7 +47,7 @@ const service = [
     title: "Treating Knee Conditions",
     description:
       "ACL injury, Fractures, Meniscus Tear, Knee Bursitis, Patellar Tendinitis, Osteoarthritis, Osteochondritis Dessicans",
-    image: "8.jpg",
+    image: "26.jpeg",
   },
   {
     title: "Chiropractic Adjsutment",
